@@ -12,7 +12,9 @@ group :assets do
 end
 
 group :test do
+  gem 'capybara'
   gem 'minitest-spec-rails'
   gem 'minitest-wscolor'
+  gem 'poltergeist', require: 'capybara/poltergeist'
 end
 

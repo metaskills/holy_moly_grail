@@ -8,7 +8,7 @@ class ApplicationControllerTest < ActionController::TestCase
 
     it 'renders a test header' do
       get :index
-      response.body.must_equal '<h1>Test Header</h1>'
+      assert_select 'h1', h1_text_loaded
     end
 
   end
